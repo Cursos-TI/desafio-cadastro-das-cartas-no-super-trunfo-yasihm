@@ -6,17 +6,65 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+#include <stdio.h>
 
+int main() {
+    // Informações da primeira carta
+    char idCarta1[4];
+    int habitantes1;
+    float tamanhoArea1, pibTotal1;
+    int atracoes1;
+    
+    // Informações da segunda carta
+    char idCarta2[4];
+    int habitantes2;
+    float tamanhoArea2, pibTotal2;
+    int atracoes2;
+    
+    // Entrada da primeira carta
+    printf("Informe o código da primeira carta (exemplo: A01): ");
+    scanf("%3s", idCarta1);
+    printf("Informe a população: ");
+    scanf("%d", &habitantes1);
+    printf("Informe a área: ");
+    scanf("%f", &tamanhoArea1);
+    printf("Informe o PIB: ");
+    scanf("%f", &pibTotal1);
+    printf("Informe o número de pontos turísticos: ");
+    scanf("%d", &atracoes1);
+    
+    printf("\n");
+    
+    // Entrada da segunda carta
+    printf("Informe o código da segunda carta (exemplo: B02): ");
+    scanf("%3s", idCarta2);
+    printf("Informe a população: ");
+    scanf("%d", &habitantes2);
+    printf("Informe a área: ");
+    scanf("%f", &tamanhoArea2);
+    printf("Informe o PIB: ");
+    scanf("%f", &pibTotal2);
+    printf("Informe o número de pontos turísticos: ");
+    scanf("%d", &atracoes2);
+    
+    printf("\n");
+    
+    // Exibição dos dados da primeira carta
+    printf("Carta %s:\n", idCarta1);
+    printf("População: %d\n", habitantes1);
+    printf("Área: %.2f\n", tamanhoArea1);
+    printf("PIB: %.2f\n", pibTotal1);
+    printf("Pontos turísticos: %d\n", atracoes1);
+    
+    printf("\n");
+    
+    // Exibição dos dados da segunda carta
+    printf("Carta %s:\n", idCarta2);
+    printf("População: %d\n", habitantes2);
+    printf("Área: %.2f\n", tamanhoArea2);
+    printf("PIB: %.2f\n", pibTotal2);
+    printf("Pontos turísticos: %d\n", atracoes2);
+    
     return 0;
 }
+
